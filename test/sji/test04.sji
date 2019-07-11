@@ -1,0 +1,7 @@
+# Example 2
+main:
+    input
+    jz exit
+    output
+exit:
+    end

@@ -1,0 +1,10 @@
+# Example 1
+main:
+    input
+    store temp
+    input
+    add temp
+    output
+    end
+data:
+    temp = 0

@@ -1,0 +1,33 @@
+main:
+    load zero
+    store i
+    input
+    store count
+    jz zero_or_under
+    jzu good
+zero_or_under:
+    load zero
+    sub one
+    jmp end_game
+good:
+    load count
+    jz load_for_finish
+    jzu good2
+load_for_finish:
+    load i
+end_game:
+    output
+zero:
+    end
+good2:
+    load i
+    add count
+    store i
+    load count
+    sub one
+    store count
+    jmp good
+data:
+    one = 1
+    count = 0
+    i = 0
